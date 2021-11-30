@@ -1,4 +1,4 @@
-import LocalPokemon from '../../utils/localPokemon.js'
+import LocalPokemon from '../../utils/nf_localPokemon.js'
 
 const state = {
     currentPokemon: LocalPokemon.vileplume,

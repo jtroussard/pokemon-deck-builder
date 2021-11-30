@@ -1,14 +1,10 @@
 <template>
         <span>
-            <div class='card'>
+            <div v-if="card" class='card'>
                 <p class='card-name'>{{ card.name.toUpperCase() }}</p>
                 <img :src="`${card.sprites.front_default}`">
                 <p class="card-stat">weight: {{ card.weight }}</p>
             </div>
-             <font-awesome-icon icon="spinner" />
-            <font-awesome-icon icon="fa-regular fa-trash-can" />
-            <font-awesome-icon icon="fa-light fa-trash-can" />
-             <font-awesome-icon icon="spinner" />
         </span>
 </template>
 
@@ -16,6 +12,17 @@
     export default {
         name: 'Card',
         props: ['card'],
+        methods: {
+            sum() {
+                return 1
+            },
+            summing() {
+                return 100
+            },
+            newmethod() {
+                return null
+            }
+        },
     }
 </script>
 

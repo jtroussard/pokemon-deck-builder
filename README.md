@@ -1,3 +1,4 @@
+[![Coverage Status](https://coveralls.io/repos/github/jtroussard/pokemon-deck-builder/badge.svg)](https://coveralls.io/github/jtroussard/pokemon-deck-builder)
 # pokemon-picker
 
 ## Project setup
