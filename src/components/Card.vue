@@ -20,7 +20,7 @@
                 return 100
             },
             newmethod() {
-                return null
+                return 999
             }
         },
     }
