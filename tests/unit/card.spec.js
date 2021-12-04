@@ -11,3 +11,8 @@ test('test 2', () => {
     const wrapper = mount(Card)
     expect(wrapper.vm.summing()).toEqual(100)
 })
+
+test('test 3', () => {
+    const wrapper = mount(Card)
+    expect(wrapper.vm.newmethod()).toEqual(999)
+})
