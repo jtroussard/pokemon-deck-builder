@@ -2,7 +2,7 @@ import LocalPokemon from '../../utils/nf_localPokemon.js'
 
 const state = {
     currentPokemon: LocalPokemon.vileplume,
-    deck: [LocalPokemon.victreebel, LocalPokemon.pikachu, LocalPokemon.staryu, 2],
+    deck: [LocalPokemon.victreebel, LocalPokemon.pikachu, LocalPokemon.staryu,],
 }
 
 const getters = {

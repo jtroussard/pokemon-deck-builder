@@ -45,7 +45,6 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {},
     "overrides": [
       {
         "files": [
@@ -56,7 +55,11 @@
           "jest": true
         }
       }
-    ]
+    ],
+    "rules": {
+      "vue/html-quotes": "error",
+      "quotes": ["error", "single"]
+    }
   },
   "browserslist": [
     "> 1%",

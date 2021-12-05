@@ -1,4 +1,5 @@
-[![Coverage Status](https://coveralls.io/repos/github/jtroussard/pokemon-deck-builder/badge.svg)](https://coveralls.io/github/jtroussard/pokemon-deck-builder)
+new pill
+[![Coverage Status](https://coveralls.io/repos/github/jtroussard/pokemon-deck-builder/badge.svg?branch=working)](https://coveralls.io/github/jtroussard/pokemon-deck-builder?branch=working)
 # pokemon-picker
 
 ## Project setup

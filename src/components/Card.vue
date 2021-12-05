@@ -1,7 +1,8 @@
 <template>
         <span>
-            <div v-if="card" class='card'>
-                <p class='card-name'>{{ card.name.toUpperCase() }}</p>
+            <div v-if="card" class="card">
+                <p>{{ card.name }}</p>
+                <p class="card-name">{{ card.name.toUpperCase() }}</p>
                 <img :src="`${card.sprites.front_default}`">
                 <p class="card-stat">weight: {{ card.weight }}</p>
             </div>
@@ -12,17 +13,6 @@
     export default {
         name: 'Card',
         props: ['card'],
-        methods: {
-            sum() {
-                return 1
-            },
-            summing() {
-                return 100
-            },
-            newmethod() {
-                return null
-            }
-        },
     }
 </script>
 
@@ -40,6 +30,7 @@ img {
     border: solid 2px rgb(87, 87, 87);
     border-radius: 4pt;
     padding-top: 10px;
+    padding-bottom: 48px;
     margin-right: 5%;
     position: relative;
     text-align: center;

@@ -4,25 +4,28 @@
 module.exports = {
   transform: {
     // "^.+\\.tsx?$": "ts-jest",
-    "^.+\\.tsx?$": "babel-jest",
+    '^.+\\.tsx?$': 'babel-jest',
     // "^.+\\.mjs$": "babel-jest",
   },
-  testPathIgnorePatterns: ["<rootDir>/build/", "<rootDir>/node_modules/", "<rootDir>/dist/", "<rootDir>/src/router/"],
-  coveragePathIgnorePatterns: ["<rootDir>/build/", "<rootDir>/node_modules/", "<rootDir>/dist/", "<rootDir>/src/router/"],
+  testPathIgnorePatterns: ['<rootDir>/build/', '<rootDir>/node_modules/', '<rootDir>/dist/', '<rootDir>/src/router/'],
+  coveragePathIgnorePatterns: ['<rootDir>/build/', '<rootDir>/node_modules/', '<rootDir>/dist/', '<rootDir>/src/router/'],
   preset: '@vue/cli-plugin-unit-jest',
   verbose: true,
-  moduleFileExtensions: ["js", "vue"],
+  moduleFileExtensions: ['js', 'vue'],
   collectCoverage: true,
   collectCoverageFrom: [
-    "**/*.{js,jsx,vue}",
-    "!**/node_modules/**",
-    "!**/vendor/**",
-    "!**/plugins/**",
-    "!**/coverage/**",
-    "!**/*.config.js",
-    "!**/main.js",
-    "!**/store/index.js",
-    "!**/nf_*",
+    '**/*.{js,jsx,vue}',
+    '!**/node_modules/**',
+    '!**/vendor/**',
+    '!**/plugins/**',
+    '!**/coverage/**',
+    '!**/*.config.js',
+    '!**/main.js',
+    '!**/store/index.js',
+    '!**/nf_*',
   ],
+  snapshotSerializers: [
+    '<rootDir>/node_modules/jest-serializer-vue',
+  ]
 }
 
